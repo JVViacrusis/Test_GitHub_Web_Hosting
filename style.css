@@ -1,0 +1,85 @@
+
+
+body
+{
+	background-color: rgb(43, 58, 66);
+	border-color
+}
+
+#container
+{
+	display: grid;
+	height: calc(100vh - 16px);
+	
+	grid-template-columns: 1.1fr 1.3fr 0.7fr 1.2fr 0.1fr 1.6fr;
+	grid-template-rows: 0.3fr 1.3fr 1.2fr 1.2fr;
+	
+	
+	grid-template-areas:
+		"title   title   title   title   title   title"
+		"cameras cameras gyro    tools   tools    tools"
+		"cameras cameras motors  motors  motors   autonomous"
+		"rioinfo power   sensors sensors settings settings";
+	
+	grid-gap: 8px;	
+}
+
+#container > div
+{
+	background-color: rgb(33, 50, 58);
+	border-style: groove;
+	border-color: rgba(23, 40, 48, 20%);
+	border-width: 2px;
+}
+
+
+
+#child-1
+{
+	grid-area: title;
+}
+
+#child-2
+{
+	grid-area: cameras;
+}
+
+#child-3
+{
+	grid-area: gyro;
+}
+
+#child-4
+{
+	grid-area: motors;
+}
+
+#child-5
+{
+	grid-area: tools;
+}
+
+#child-6
+{
+	grid-area: rioinfo;
+}
+
+#child-7
+{
+	grid-area: power;
+}
+
+#child-8
+{
+	grid-area: autonomous;
+}
+
+#child-9
+{
+	grid-area: settings;
+}
+
+#child-10
+{
+	grid-area: sensors;	
+}
